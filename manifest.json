@@ -4,12 +4,19 @@
     "start_url": "index.html",
     "display": "standalone",
     "background_color": "#fdfdfd",
-    "theme_color": "",
+    "theme_color": "#4285F4",
     "orientation": "portrait-primary",
     "icons": [
       {
         "src": "img/icons/cross.png",
-        "type": "image/png", "sizes": "72x72"
+        "type": "image/png",
+        "sizes": "72x72"
+      },
+      {
+        "src": "img/icons/cross.png",
+        "type": "image/png",
+        "sizes": "192x192",
+        "purpose": "any"
       }
     ]
   }

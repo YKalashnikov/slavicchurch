@@ -2,10 +2,16 @@
 
 	new WOW().init();
 
-	jQuery(window).load(function() { 
+	function hidePreloader() {
 		jQuery("#preloader").delay(100).fadeOut("slow");
 		jQuery("#load").delay(100).fadeOut("slow");
-	});
+	}
+
+	jQuery(window).load(hidePreloader);
+
+	// Safety fallback: never leave the preloader covering the page if a
+	// resource (fonts, maps, images) is slow or fails to load.
+	setTimeout(hidePreloader, 5000);
 
 
 	//jQuery to collapse the navbar on scroll

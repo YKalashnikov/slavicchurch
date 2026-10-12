@@ -9,14 +9,14 @@
   <meta name="description" content="Independent Slavic Baptist Church Of San Diego" />
   <meta property="og:title" content="Independent Slavic Baptist Church Of San Diego" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:url" content="">
+  <meta property="og:url" content="https://slavicbaptistsandiego.org/">
   <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://slavicbaptistsandiego.org/" />
   <meta property="og:description" content="Independent Slavic Baptist Church Of San Diego" />
   <meta property="og:image" content="./img/icons/cross.png" />
+  <meta name="theme-color" content="#4285F4" />
   <link rel="manifest" href="manifest.json" />
-  <link rel="icon" type="image/ico" href="./img/icons/cross.png">
-
-  <link rel="apple-touch-icon" href="img/icons/cross.png" />
+  <link rel="icon" type="image/png" href="./img/icons/cross.png">
   <link rel="apple-touch-icon" href="img/icons/cross.png" />
 
   <meta name="twitter:card" content="summary_large_image">
@@ -27,12 +27,14 @@
   <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
   <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
   <link href="css/animate.css" rel="stylesheet" />
   <!-- Squad theme CSS -->
   <link href="css/style.css" rel="stylesheet" />
   <link href="color/default.css" rel="stylesheet" />
-  <link rel="icon" href="./img/icons/cross.png">
 </head>
 <!--   oncontextmenu="return false" -->
 
@@ -44,20 +46,14 @@
 
   <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
     <div class="container">
-      <div class="navbar-header page-scroll">
+      <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
           <i class="fa fa-bars"></i>
         </button>
-        <div class="language">
-          <div>
-            <a href="/">
-              <img loading="lazy" src="./img/icons/eng.png" alt="english">
-            </a>
-            <a href="rus.html">
-              <img loading="lazy" src="./img/icons/rus.png" alt="Slavic">
-            </a>
-          </div>
-        </div>
+        <a class="navbar-brand page-scroll" href="#intro">
+          <img class="brand-logo" src="./img/icons/cross.png" alt="">
+          <span>Slavic Baptist Church</span>
+        </a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -65,8 +61,16 @@
         <ul class="nav navbar-nav">
           <li class="active"><a href="#intro">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#service">Service</a></li>
+          <li><a href="#service">Services</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li class="lang-switch">
+            <a href="/" title="English">
+              <img loading="lazy" src="./img/icons/eng.png" alt="English">
+            </a>
+            <a href="rus.html" title="Русский">
+              <img loading="lazy" src="./img/icons/rus.png" alt="Русский">
+            </a>
+          </li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
@@ -76,14 +80,19 @@
   <!-- Section: intro -->
   <section id="intro" class="intro">
     <div class="slogan">
-      <h2>WELCOME TO <span class="text_color"></span></h2>
-      <h4>Independent Slavic Baptist Church Of San Diego</h4>
+      <h2>Welcome<span class="text_color">.</span></h2>
+      <h4>Independent Slavic Baptist Church of San Diego</h4>
       <h3>
-        "...Seek first the kingdom of God and His righteousness..." <span class="quotation">Matthew 6:33</span>
+        "...Seek first the kingdom of God and His righteousness..."
+        <span class="quotation">Matthew 6:33</span>
       </h3>
+      <div class="hero-cta">
+        <a href="#service" class="btn btn-gold">Join Us &middot; Sunday 2PM</a>
+        <a href="#about" class="btn btn-outline-light">Learn More</a>
+      </div>
     </div>
     <div class="page-scroll">
-      <a href="#service" class="btn btn-circle">
+      <a href="#about" class="btn btn-circle">
         <i class="fa fa-angle-down animated"></i>
       </a>
     </div>
@@ -225,7 +234,6 @@
         </div>
       </div>
     </div>
-    </div>
 
   </section>
   <!-- /Section: about -->
@@ -335,7 +343,7 @@
       </div>
     </div>
     <div class="container">
-      <iv class="row">
+      <div class="row">
         <div class="col-lg-8">
 
           <div id="map"></div>
