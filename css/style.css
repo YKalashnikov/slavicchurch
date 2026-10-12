@@ -763,8 +763,16 @@ footer .btn-circle:hover {
   }
 
   .navbar-custom .nav li.lang-switch {
+    display: flex;
     justify-content: center;
     padding: 10px 0 4px;
+  }
+
+  .navbar-custom .nav li.lang-switch a {
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
   }
 
   .home-section { padding: 80px 0; }
